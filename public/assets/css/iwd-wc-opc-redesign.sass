@@ -1,0 +1,1190 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800')
+
+@import "variables"
+@import "select2"
+@import "iwd-wc-opc-empty-cart"
+
+
+/* ================== STOREFRONT START ================== */
+
+html
+  min-height: 100vh
+
+  body, #page, #content
+    height: 100%
+    min-height: 100vh
+
+.storefront-breadcrumb,
+.hentry.type-page .entry-header,
+#secondary.widget-area,
+p.cart-empty
+  display: none
+
+
+#primary.content-area
+  width: 100%
+
+.woocommerce form .form-row .input-checkbox
+  display: none
+
+#content.site-content
+  overflow: hidden
+
+.woocommerce-checkout
+  .col-full
+    width: 100%
+    max-width: 1200px
+    padding-left: 12px
+    padding-right: 12px
+    box-sizing: border-box
+
+  a:hover
+    text-decoration: none
+
+  .hentry, .site-main, .content-area
+    margin-bottom: 0
+
+.woocommerce-order
+  & > p.woocommerce-notice
+    margin-top: 25px
+
+/* ================== STOREFRONT END ================== */
+
+/* For Safari */
+select#billing_country, select#billing_state,
+select#shipping_country, select#shipping_state
+  visibility: hidden
+
+.sticky
+  position: fixed !important
+
+.iwd-opc
+  .woocommerce-SavedPaymentMethods-saveNew
+    margin-top: 20px !important
+
+  .woocommerce-SavedPaymentMethods
+    margin-left: 0
+    list-style: none
+
+    li
+      label
+        padding-right: 0 !important
+
+  label
+    cursor: pointer
+
+.iwd-opc-clear
+  clear: both
+
+#mobile-promo,
+#mobile-place-order
+  display: none
+
+.iwd-opc-main
+  & > ul
+    list-style: none
+    margin-left: 0
+
+  & > p + h3
+    margin-top: 30px
+
+.wc-gateway-ppec-cancel
+  width: 100%
+  font-size: 15px
+  font-weight: 600
+  text-transform: uppercase
+  height: 50px
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 5px
+  margin-top: 10px
+  margin-bottom: 20px
+
+  &:hover, &:active
+    text-decoration: none
+
+.iwd-opc-main-wrapper
+  position: relative
+  padding-top: 71px
+  font-family: 'Open Sans', sans-serif
+  max-width: 1200px
+  margin-left: auto
+  margin-right: auto
+  color: $grey
+
+  &.loggedIn
+    .anchors
+      &__item:first-child
+       display: none
+
+  .form-row,
+  .form-row-first,
+  .form-row-last,
+  .form-row-wide
+    margin: 0
+    clear: none
+
+
+  .select2-container
+    height: 50px
+
+  .select2-selection--single
+    border: 1px solid $grey2
+
+  .select2-selection--single
+    height: 50px
+    border-radius: 7.5px
+
+    .select2-selection__rendered
+      line-height: 50px
+      padding-left: 13px
+
+    .select2-selection__arrow
+      display: none
+
+    &::after
+      content: '\f107'
+      position: absolute
+      right: 16px
+      top: 50%
+      transform: translateY(-50%)
+      margin-top: 0
+      width: auto
+      height: auto
+      font-family: 'FontAwesome', sans-serif
+      font-size: 14px
+      border: none
+
+    &:focus
+      outline: none
+      box-shadow: 0 0 9.8px 0.2px rgba(46, 46, 46, 0.11)
+
+
+  .address-field .iwd-opc-field--select .input-text
+    background: inherit
+    -webkit-border-radius: 7.5px
+    border-radius: 7.5px
+    border-width: 1px
+    border-style: solid
+    padding: 19px 14px 8px
+    font-family: 'Open Sans', sans-serif
+    line-height: 19px
+    font-size: 14px
+    outline: none
+    min-height: 50px
+    width: 100%
+    -webkit-box-shadow: none
+    box-shadow: none
+    color: #000000
+    -webkit-transition: all .3s ease
+    -o-transition: all .3s ease
+    transition: all .3s ease
+
+    &::placeholder
+      color: transparent !important
+
+  .fieldset
+    position: relative
+    margin: 0
+    padding: 0
+
+/* FOR IE */
+.iwd-opc-main-wrapper .address-field .iwd-opc-field--select .input-text:-ms-input-placeholder
+  color: transparent !important
+
+.iwd-opc-field--select > select ~ .iwd-opc-field__label
+  display: none
+
+.iwd-opc-main-top
+  margin-bottom: 22px
+
+  &__title
+    margin-bottom: 18px
+    display: inline-block
+    font-size: 40px
+    line-height: 23px
+    font-weight: 300
+    color: $black2
+
+    &--mobile
+      display: none
+
+  &__login
+    flex-basis: 100%
+
+
+.iwd-opc-smart-buttons
+  margin-top: 20px
+  width: 100%
+  max-width: 276px
+
+
+.iwd-opc-login-form
+  &__login-message
+    margin-bottom: 17px
+    display: inline-block
+    font-size: 14px !important
+    line-height: 19px
+    color: $grey
+
+    a
+      text-decoration: none
+
+      &:hover
+        text-decoration: underline
+
+    &--logged
+      font-size: 19px !important
+
+  .iwd-opc-error
+    top: auto
+    bottom: -21px
+
+// Shipping fields
+.iwd-opc-shipping-form
+  margin-bottom: 34px
+
+.iwd-opc-shipping-methods-form
+  margin-bottom: 30px
+
+#ship-to-different-address
+  margin-bottom: 0
+
+  label
+    margin-bottom: 0
+    margin-left: 0
+
+    span
+      font-weight: 400
+
+.iwd_opc_account_fields
+  label
+    margin-bottom: 0 !important
+    margin-left: 0 !important
+
+.woocommerce-checkout
+  input
+    box-shadow: 0 0 0 1000px #fff inset !important
+
+input.iwd-opc-input
+  border-radius: 7.5px
+  border: 1px solid $grey2
+  padding: 19px 14px 8px
+  font-family: 'Open Sans', sans-serif
+  line-height: 19px
+  font-size: 14px
+  outline: none
+  min-height: 50px
+  width: 100%
+  background: transparent
+  color: $black
+  transition: all .3s ease
+
+  &::placeholder
+    color: transparent !important
+
+  &:focus
+    background-color: transparent
+    box-shadow: 0 0 9.8px 0.2px rgba(46, 46, 46, 0.11)
+
+    & + .iwd-opc-field__label
+      top: 5px
+      transform: translateY(0)
+      font-size: 12px
+
+/* FOR IE */
+input.iwd-opc-input:-ms-input-placeholder
+  color: transparent !important
+
+
+textarea#order_comments
+  &:focus
+    background-color: transparent
+    box-shadow: 0 0 9.8px 0.2px rgba(46, 46, 46, 0.11)
+
+#order_comments_field
+  padding-left: 0
+
+textarea#order_comments
+  margin-top: 20px
+  padding-left: 13px
+  padding-right: 13px
+  border-width: 1px
+  border-style: solid
+  border-color: $grey2
+  height: 50px !important
+  border-radius: 5px
+  background: transparent
+  box-shadow: none
+
+.iwd-opc-field--select
+  .input-text
+    border: 1px solid $grey2
+
+    &:focus
+      background-color: transparent
+      box-shadow: 0 0 9.8px 0.2px rgba(46, 46, 46, 0.11)
+
+      & + .iwd-opc-field__label
+        top: 5px
+        transform: translateY(0)
+        font-size: 12px
+
+.iwd-opc-field
+  display: block
+  position: relative
+  margin-bottom: 25px //15px
+  z-index: 1
+
+  &__label
+    position: absolute
+    top: 50%
+    left: 15px
+    transform: translateY(-50%)
+    font-size: 14px
+    line-height: 19px
+    color: #A0A0A0
+    transition: all .2s ease
+    z-index: 1
+    //cursor: none
+
+    &.filed
+      top: 5px
+      transform: translateY(0)
+      font-size: 12px
+
+.woocommerce-checkout #wc-stripe-new-payment-method
+  display: none
+
+input.input-checkbox, .woocommerce-checkout #wc-stripe-new-payment-method
+  & + label
+    cursor: pointer
+    margin-left: 0
+
+    &::before
+      font-size: 1em
+      content: "\f0c8"
+      font-family: 'FontAwesome', sans-serif
+      margin-right: 10px
+      transition: initial
+      color: $grey
+
+  &:first-child:checked + label:before
+    content: "\f14a"
+
+.shipping_address
+  margin-top: 45px
+
+.iwd-opc-section-title
+  margin-bottom: 25px
+  font-size: 25px
+  line-height: 1
+  font-weight: 300
+  color: $black2
+
+
+// Delivery section
+.shipping-methods-list
+  &__item
+    margin-bottom: 15px
+
+    input[type=radio]
+      display: none
+
+      & + label
+        position: relative
+        padding: 0 15px 0 38px
+        display: block
+        margin: 0
+        height: 50px
+        line-height: 50px
+        font-size: 14px
+        font-weight: 600
+        border-width: 1px
+        border-style: solid
+        border-color: $grey2
+        border-radius: 5px
+        color: $grey
+        cursor: pointer
+        text-overflow: ellipsis
+        white-space: nowrap
+        overflow: hidden
+
+        &::before
+          position: absolute
+          left: 15px
+          content: "\f111"
+          font-family: 'FontAwesome', sans-serif
+          font-size: 14px
+          color: $grey2
+
+        .woocommerce-Price-amount.amount
+          float: right
+          font-size: 12px
+          margin-left: 5px
+          font-weight: 600
+          color: $grey
+          order: 2
+
+      &:checked
+        & + label
+          color: $black2
+          box-shadow: 0 0 9.8px 0.2px rgba(46, 46, 46, 0.13)
+
+          &::before
+            content: "\f192"
+
+          .woocommerce-Price-amount.amount
+            color: $black2
+
+
+
+// Payment methods
+.iwd-opc-payment-methods-form
+  &__edit-cart
+    display: flex !important
+    align-items: center
+    justify-content: flex-start
+    margin-top: 32px
+    padding-left: 0 !important
+    font-size: 14px !important
+    text-align: center
+
+    i.fa
+      margin-right: 12px
+      font-size: 20px
+
+    &--multistep
+      display: none !important
+
+    &::before
+      display: none !important
+
+.payment-methods-list
+  &__item
+    margin-bottom: 15px
+    border-width: 1px
+    border-style: solid
+    border-color: $grey2
+    border-radius: 5px
+
+    &.checked
+      box-shadow: 0 0 9.8px 0.2px rgba(46, 46, 46, 0.13)
+
+    input[type=radio]
+      display: none
+
+      & + label
+        position: relative
+        padding: 0 15px 0 38px
+        display: block
+        align-items: center
+        margin: 0
+        height: 50px
+        line-height: 50px
+        font-size: 14px
+        font-weight: 600
+        color: $grey
+        cursor: pointer
+
+        &::before
+          position: absolute
+          left: 15px
+          content: "\f111"
+          font-family: 'FontAwesome', sans-serif
+          font-size: 14px
+          color: $grey2
+
+        .woocommerce-Price-amount.amount
+          margin-left: auto
+          font-size: 12px
+          font-weight: 600
+          color: $grey
+          order: 2
+
+      &:checked
+        & + label
+          color: $black2
+
+          &::before
+            content: "\f192"
+
+          .woocommerce-Price-amount.amount
+            color: $black2
+
+.payment_box
+  padding: 0 15px 22px
+
+  p
+    margin: 0
+
+.wc-credit-card-form.wc-payment-form
+  border: none
+  margin-left: 0
+  margin-right: 0
+  padding: 0
+
+  br
+    display: none
+
+
+.form-row.form-row-last,
+.form-row.form-row-first,
+  .wc-stripe-elements-field
+    margin-bottom: 0
+
+.wc-stripe-elements-field
+  margin-bottom: 15px
+  padding: 15px
+  border: 1px solid $grey2
+  border-radius: 7.5px
+
+
+
+// Sidebar with summary
+.iwd-opc-sidebar
+  position: relative
+
+  .iwd-opc-sidebar-wrapper
+    &.is-affixed
+      position: fixed
+      top: 0
+
+      &::after
+        left: 0
+
+    &::after
+      content: ''
+      display: block
+      position: absolute
+      left: 12px
+      top: -92px
+      right: -1000%
+      bottom: -1000%
+      z-index: -1
+      background: #f6f6f6
+
+  .iwd-opc-sidebar-data-wrapper
+    width: 100%
+    max-width: 376px
+
+  &.open
+    .iwd-opc-review-form
+      display: block
+
+    .iwd-opc-sidebar__tablet-header
+      position: absolute
+      left: 0
+      right: 0
+      bottom: 0
+      padding-top: 15px
+      padding-bottom: 15px
+
+      p:first-child
+        display: none
+
+      p:last-child
+        display: block
+
+  &__tablet-subtitle
+    display: none
+    margin-top: 18px
+    margin-bottom: 0
+    font-size: 15px
+    text-align: center
+    color: #1c1c1c
+    font-weight: 400
+
+  &__tablet-header
+    display: none
+    padding-top: 11px
+    padding-bottom: 11px
+    cursor: pointer
+    background-color: #ebebeb
+
+    p
+      margin: 0
+      font-size: 13px
+      color: #060606
+      text-align: center
+
+    p:last-child
+      display: none
+      font-size: 14px
+      text-transform: uppercase
+      font-weight: 600
+
+  &__tablet-header-total
+    font-size: 13px
+    font-weight: 600
+
+  &__desktop-header
+    padding-left: 38px
+
+    h3
+      margin-top: 38px
+      margin-bottom: 0
+      font-size: 30px
+      font-weight: 300
+      color: #151515
+
+  &__edit-cart
+    margin-top: 8px
+    text-transform: capitalize
+
+
+// Order Summary
+.iwd-opc-review-form
+  position: relative
+  padding-left: 38px
+
+  &__main-wrapper
+    padding-top: 1px
+
+.edit-cart-link
+  display: inline-block
+  position: relative
+  padding-left: 22px
+  font-size: 12px
+
+  &::before
+    content: "\f104"
+    position: absolute
+    top: 46%
+    left: 0
+    transform: translateY(-50%)
+    font-family: 'FontAwesome', sans-serif
+    font-size: 22px
+
+
+.iwd-opc-review-products-wrapper
+  margin-top: 48px
+
+.iwd-opc-review-products
+  &__item
+    display: flex
+    align-items: flex-start
+    margin-bottom: 25px
+
+  &__item-img
+    max-width: 100px
+    min-width: 100px
+    margin-right: 25px
+
+    img
+      width: 100%
+
+  &__item-name
+    margin-right: 28px
+    margin-bottom: 7px
+    font-size: 14px
+    line-height: 19px
+    color: $black2
+
+  &__item-attributes
+    margin-bottom: 8px
+    font-size: 13px
+    line-height: 18px
+    color: $grey5
+    text-transform: capitalize
+
+  &__item-qty
+    margin-bottom: 0
+
+  &__item-subtotal
+    margin-left: auto
+
+    span
+      font-size: 13px
+      line-height: 18px
+      color: $black2
+
+
+// Promo code
+.iwd-opc-discount
+  margin-bottom: 20px
+  border-top: 1px solid $grey4
+  border-bottom: 1px solid $grey4
+
+  &.opened
+    .iwd-opc-discount
+      &__form
+        display: block
+
+      &__title
+        &::after
+          content: '\f056'
+
+  .cart-discount
+    display: flex
+    margin-bottom: 10px
+    justify-content: space-between
+    flex-wrap: wrap
+
+    .cart_discount_label,
+    .cart_discount_html
+      float: none
+
+  &__title-wrapper
+    padding-top: 21px
+    padding-bottom: 21px
+    cursor: pointer
+
+  &__title
+    position: relative
+    margin-bottom: 0
+    display: inline-block
+    font-size: 15px
+    line-height: 19px
+    color: $black2
+    font-weight: 400
+
+    &::after
+      position: absolute
+      top: 0
+      right: -23px
+      content: '\f055'
+      font-family: 'FontAwesome', sans-serif
+      font-size: 15px
+
+  &__form
+    display: none
+    margin-bottom: 25px
+
+    .woocommerce-message, .woocommerce-error
+      margin-bottom: 25px
+
+
+  &__field
+    margin-bottom: 0
+    flex-basis: 62%
+
+  &__form-input.iwd-opc-input
+    width: 100%
+    min-height: 40px
+    padding: 0 14px
+    height: 40px
+    line-height: 40px
+    color: $black2
+    border-radius: 5px
+
+    &::placeholder
+      color: $grey3 !important
+
+  &__form-input-wrapper
+    display: flex
+    flex-wrap: nowrap
+    max-width: 330px
+
+  &__apply-wrapper
+    margin-left: auto
+    flex-basis: 31%
+
+  .iwd-opc-btn
+    min-width: auto !important
+    width: 100%
+  .cart_discount_html
+    margin-left: auto
+
+/* FOR IE */
+.iwd-opc-discount.opened .iwd-opc-discount__form-input .iwd-opc-input:-ms-input-placeholder
+  color: $grey3 !important
+
+.iwd-opc-btn
+  min-width: 100px
+  min-height: 40px
+  font-size: 14px
+  line-height: 19px
+  height: 40px
+  //color: #fff
+  //background-color: $black2
+  text-transform: uppercase
+  border-radius: 5px
+  transition: all .2s ease
+
+
+.iwd-opc-review-totals
+  margin: 0
+
+  tbody
+    tr
+      &:nth-child(2n) td
+        background-color: transparent
+      th
+        border: none
+
+      td
+        padding: 0
+        font-size: 13px
+        line-height: 23px
+        color: $grey5
+        background-color: transparent
+        border: none
+
+        &:nth-child(2n)
+          text-align: right
+          background-color: transparent
+
+
+  &__discount
+    td
+      font-weight: 600
+
+  &__total
+    td
+      padding-top: 12px !important
+      font-weight: 700
+      color: $black2 !important
+      text-transform: uppercase
+
+
+.iwd-opc-place-order-wrapper
+  margin-top: 7px
+  font-size: 13px
+
+.place-order-button-wrapper
+  .place-order-btn
+    width: 100%
+    font-size:  15px
+    font-weight: 600
+    text-transform: uppercase
+    height: 50px
+
+
+// Validation
+.woocommerce-invalid.woocommerce-invalid-required-field
+  .iwd-opc-input
+    border-color: $red
+
+  .iwd-opc-field__label
+    color: $red
+
+  .iwd-opc-field__label.filed
+    top: 50%
+    transform: translateY(-50%)
+    font-size: 14px
+
+  .iwd-opc-error
+    display: block
+
+.iwd-opc-error
+  display: none
+  position: absolute
+  top: -21px
+  left: 1px
+  color: $red
+  font-size: 11px
+  line-height: 19px
+  text-transform: uppercase
+
+  &::before
+    margin-right: 9px
+    content: '\f06a'
+    font-family: 'FontAwesome', sans-serif
+    font-size: 11px
+
+
+// Anchors
+.anchors
+  display: none
+  margin-top: 40px
+  margin-bottom: 40px
+  padding: 25px 15px 21px
+  background-color: $grey7
+  border-radius: 10px
+
+  &__list
+    list-style: none
+    padding: 0
+    margin: 0
+
+  &__item
+    margin-bottom: 2px
+
+  &__link
+    margin-left: auto
+    font-size: 12px
+    line-height: 23px
+    text-transform: none
+    font-weight: 400
+
+  &__item-title
+    margin-bottom: 2px
+    display: flex
+    align-items: center
+    font-size:  13px
+    line-height:  23px
+    font-weight: 600
+    color: $black2
+    text-transform: uppercase
+
+
+  &__item-value
+    margin: 0
+    font-size:  13px
+    line-height:  23px
+    color: $grey
+
+/* Paypal logged in */
+.paypal-checkout-completed
+  .iwd-opc-shipping-methods-form
+    margin-top: 40px
+
+/* Multistep */
+.multistep-btn
+  display: none
+  min-height: 50px
+  width: 100%
+  font-size: 15px
+  font-weight: 600
+
+.multistep-billing-btn
+  margin-top: 0
+  margin-bottom: 0
+
+.multistep-delivery-btn
+  margin-top: 35px
+
+.multistep-place-btn
+  margin-top: 35px
+
+.iwd-opc-shipping-methods-form,
+.iwd-opc-payment-methods-form
+  &__back
+    display: none
+    margin-top: 24px
+    align-items: center
+    justify-content: flex-start
+    padding-left: 0 !important
+    font-size: 14px !important
+
+    &::before
+      font-size: 24px !important
+
+    i.fa
+      margin-right: 12px
+      font-size: 20px
+
+    &::before
+      display: none !important
+
+.iwd-opc-breadcrumbs
+  display: none
+  margin: 0
+  padding: 0
+  list-style: none
+
+  &__item
+    position: relative
+    margin-right: 12px
+    padding-right: 15px
+
+    &::after
+      content: '\f105'
+      position: absolute
+      top: 50%
+      right: 0
+      transform: translateY(-50%)
+      font-size: 14px
+      font-family: 'FontAwesome', sans-serif
+      color: #909090
+
+    &:last-child
+      margin-right: 0
+      padding-right: 0
+
+      &:after
+        display: none
+
+  &__link
+    font-size: 14px
+    color: $black2 !important
+
+.secured-checkout
+  margin-top: -3px
+  display: block
+  font-size: 12px
+  color: $black2
+  text-transform: uppercase
+  text-align: right
+
+  &::before
+    content: '\f023'
+    margin-right: 14px
+    font-family: 'FontAwesome', sans-serif
+    color: $black2
+    font-size: 18px
+    line-height: 1
+
+.iwd-opc-main-wrapper
+  &.desktop-multistep,
+  &.tablet-multistep,
+  &.mobile-multistep
+    padding-top: 36px
+
+    .iwd-opc-main-top
+      margin-top: 20px
+
+    .iwd-opc-sidebar__desktop-header h3
+      margin-top: 62px
+
+    &.step-1
+      .iwd-opc-breadcrumbs
+        &__item:first-child
+          .iwd-opc-breadcrumbs__link
+            color: #909090 !important
+
+    &.step-2
+      .iwd-opc-breadcrumbs
+        &__item:nth-child(2)
+          .iwd-opc-breadcrumbs__link
+            color: #909090 !important
+
+      .iwd-opc-main-top__login
+        display: none
+
+    &.step-3
+      .iwd-opc-breadcrumbs
+        &__item:nth-child(3)
+          .iwd-opc-breadcrumbs__link
+            color: #909090 !important
+
+      .iwd-opc-main-top__login
+        display: none
+
+    &.is-virtual
+      .anchors__list .anchors__item:nth-child(2),
+      .anchors__list .anchors__item:nth-child(3)
+        display: none
+
+
+
+/* Login */
+#iwd_opc_login_here_content
+  margin-top: 0
+
+#iwd_login_submit,
+#iwd_reset_password
+  cursor: pointer
+  min-width: 100%
+
+#iwd_opc_login_form_error
+  margin-top: 13px
+  border: none
+  text-align: center
+
+/* Login modal */
+.login-before-checkout
+  padding-top: 29px
+  background: #fff
+
+  &__wrapper
+    max-width: 1200px
+    margin-left: auto
+    margin-right: auto
+
+    h1
+      margin: 0 0 94px
+      text-align: center
+      font-size: 40px
+      font-weight: 300
+      line-height: 30px
+      color: $black2
+
+    h2
+      text-align: center
+      font-size: 25px
+      line-height: 30px
+      font-weight: 300
+      color: $black2
+
+  &__separator
+    width: 1px
+    height: 429px
+    background: #ebebeb
+    margin: -44px auto 0
+
+  &__guest-input-wrapper
+    display: none
+
+  &__have-account,
+  &__guest-title
+    max-width: 382px
+    margin: 0 auto 31px
+
+  &__mobile-title
+    margin-top: 38px
+    margin-bottom: 38px
+    display: none
+    font-size: 15px
+    text-align: center
+    color: $grey
+    line-height: 19px
+
+  .iwd-opc-field
+    margin-bottom: 15px
+
+  .iwd-login-submit,
+  .iwd-checkout-as-guest-btn
+    display: block
+    max-width: 300px
+    width: 100%
+    min-width: auto
+    margin: 35px auto 0
+    min-height: 50px
+    font-weight: 600
+
+    &--mobile-toggle
+      display: none
+
+  .iwd-checkout-as-guest-btn
+    margin-top: 0
+
+  .or-express-text
+    margin-top: 44px
+    margin-bottom: 28.5px
+    text-align: center
+    font-size: 25px
+    line-height: 30px
+    font-weight: 300
+    color: $black2
+
+  .iwd-opc-smart-buttons
+    margin-left: auto
+    margin-right: auto
+    max-width: 365px
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus
+  -webkit-transition: color 9999s ease-out, background-color 9999s ease-out
+
+
+@keyframes onAutoFillStart
+  from
+    /**/
+
+  to
+    /**/
+
+@keyframes onAutoFillCancel
+  from
+    /**/
+
+  to
+    /**/
+
+input:-webkit-autofill
+  // Expose a hook for JavaScript when autofill is shown
+  // JavaScript can capture 'animationstart' events
+  animation-name: onAutoFillStart
+
+  // Make the background color become yellow really slowly
+  -webkit-transition: color 9999s ease-out 0s, background-color 9999s ease-out 0s
+
+input:not(:-webkit-autofill)
+  // Expose a hook for JS onAutoFillCancel
+  // JavaScript can capture 'animationstart' events
+  animation-name: onAutoFillCancel
+

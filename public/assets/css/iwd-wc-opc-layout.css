@@ -1,0 +1,21 @@
+/* IWD WooCommerce Header Styles */
+
+.site-header {
+    border: none;
+}
+.woocommerce-active .site-header .site-branding {
+    width:auto;
+}
+/* Hide unnecessary header parts on Checkout Page */
+.site-header nav,
+.site-header div.menu,
+.site-header .site-header-cart,
+.site-header .site-search,
+.storefront-breadcrumb,
+.hentry.type-page .entry-header{
+    display:none;
+}
+/* Hide Footer */
+.site-footer {
+    display: none;
+}

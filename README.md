@@ -1,0 +1,1 @@
+Dominate Checkout Suite (Open-Source) Extension for Wordpress

@@ -1,0 +1,20 @@
+/* IWD OPC Admin Panel Styles */
+
+#iwd_wc_opc_general_settings table.form-table {
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+#iwd_wc_opc_general_settings table.form-table th,
+#iwd_wc_opc_general_settings table.form-table td {
+    padding: 20px;
+}
+
+#iwd_wc_opc_general_settings table.form-table td fieldset label {
+    margin: 0 !important;
+}
+
+#iwd_wc_opc_general_settings table.form-table.design-conf-table td fieldset label {
+    margin-right: 50px !important;
+}
+

@@ -1,0 +1,644 @@
+@import "variables"
+
+@media screen and (min-width: 992px) and (max-width: 1070px)
+  .iwd-opc-review-form
+    padding-left: 15px
+
+  .iwd-opc-sidebar__desktop-header
+    padding-left: 15px
+
+
+/* Styles for desktop version */
+@media  screen and (min-width: 992px)
+  //.inner-wrapper-sticky
+    padding-bottom: 100px
+
+
+  .iwd-opc-sidebar-wrapper
+    max-width: 376px
+    width: 100%
+
+
+/* Styles for mobile and tablet version */
+@media screen and (max-width: 991px)
+  #mobile-promo
+    .iwd-opc-discount
+      border: none
+
+      &__title
+        &::after
+          display: none
+
+  .iwd-opc-sidebar
+    position: fixed
+    left: 0
+    right: 0
+    bottom: 0
+    padding-left: 0
+    padding-right: 0
+    background-color: #f8f8f8
+    z-index: 10000
+    overflow-y: scroll
+    min-height: 40px
+
+    &__desktop-header
+      display: none
+
+    &__tablet-header
+      display: block
+
+    &::after
+      display: none
+
+    .iwd-opc-place-order-wrapper
+      display: none
+
+    &.open
+      .iwd-opc-sidebar__tablet-subtitle
+        display: block
+
+    .iwd-opc-discount__field
+      max-width: 181px
+
+  .iwd-opc-review-products-wrapper
+    margin-top: 19px
+
+  .iwd-opc-review-form
+    margin-top: 0
+    padding-left: 12px
+    padding-right: 12px
+
+  .iwd-opc-review-form
+    display: none
+    margin-top: 0
+    padding-top: 1px
+    max-height: calc(100% - 70px)
+    overflow-y: auto
+
+    &::after
+      display: none
+
+    &__main-wrapper
+      max-width: 500px
+      margin-left: auto
+      margin-right: auto
+
+  .iwd-opc-main-wrapper
+    &.desktop-multistep,
+    &.tablet-multistep,
+    &.mobile-multistep
+      padding-top: 21px
+
+      .iwd-opc-smart-buttons
+        margin-top: 26px
+        margin-bottom: 17px
+
+  .login-before-checkout__inputs-wrapper
+    margin-left: auto
+    margin-right: auto
+
+  .iwd-opc-sidebar .iwd-opc-sidebar-wrapper::after
+    display: none
+
+  .inner-wrapper-sticky
+    position: static !important
+    transform: none !important
+    top: auto !important
+
+  .login-before-checkout
+    padding-top: 0
+
+  .iwd-opc-payment-methods-form__edit-cart
+    margin-bottom: 50px
+
+/* Styles for mobile version */
+@media screen and (max-width: 767px)
+  .iwd-opc-main-wrapper
+    padding-top: 0
+
+  .iwd-opc-main-top
+    margin-bottom: 27px
+
+    &__title
+      font-size: 30px
+      line-height: 19px
+
+  .iwd-opc-field
+    margin-bottom: 20px
+
+  .iwd-opc-section-title
+    margin-bottom: 17px
+    font-size: 15px
+    line-height: 19px
+    font-weight: 400
+
+  .iwd-opc-payment-methods-form__edit-cart
+    display: none
+
+  #mobile-promo,
+  #mobile-place-order
+    display: block
+
+  .anchors
+    display: block
+
+  .iwd-opc-smart-buttons
+    margin-top: 7px
+
+  #ship-to-different-address
+    margin-bottom: 9px
+
+
+  .iwd-opc-main-wrapper
+    &.desktop-multistep,
+    &.tablet-multistep,
+    &.mobile-multistep
+
+      .iwd-opc-main-top__title
+        display: none
+
+      .iwd-opc-breadcrumbs
+        justify-content: center
+
+      .iwd-opc-main-top
+        margin-top: 0
+
+      .iwd-opc-smart-buttons
+        margin-top: 20px
+
+      .secured-checkout
+        margin-top: 14px
+
+      &.step-2,
+      &.step-3
+        .iwd-opc-smart-buttons
+          display: none
+
+  .iwd-opc-smart-buttons
+    margin-left: auto
+    margin-right: auto
+
+  .form-row.form-row-first .wc-stripe-elements-field
+    margin-bottom: 15px
+
+  .iwd-opc-error
+    top: -19px
+
+  .login-before-checkout
+
+    &__mobile-title
+      display: block
+      font-weight: 300
+      color: #1c1c1c
+
+    &__wrapper
+      max-width: 400px
+      margin-left: auto
+      margin-right: auto
+
+      h1
+        font-size: 26px
+        margin: 30px 0 26px
+
+      h2
+        display: none
+
+    .or-express-text
+      display: none
+
+    .iwd-opc-smart-buttons
+      margin-top: 25px
+
+    .iwd-login-submit
+      margin-top: 11px
+
+  .secured-checkout
+    text-align: center
+    margin-top: 15px
+
+  #order_comments
+    margin-bottom: 25px
+
+  .woocommerce-checkout
+    #wpadminbar
+      display: none
+
+/* DO NOT TOUCH NOW */
+@media  screen and (max-width: 767px)
+  .shipping-methods-list__item
+    margin-bottom: 15px
+
+    &:last-child
+      margin-bottom: 0
+
+  .iwd-opc-smart-buttons
+    float: none !important
+    margin-top: 32px
+    margin-bottom: 37px
+
+  .iwd-opc-main-top
+    &__title
+      display: none
+
+      &--mobile
+        display: block !important
+        text-align: center
+
+
+@media screen and (min-width: 768px) and (max-width: 991px)
+  .iwd-opc-sidebar
+    &::after
+      display: none
+
+    &__desktop-header
+      padding-left: 0
+
+    .iwd-opc-review-form
+      padding-left: 0
+
+  #mobile-promo,
+  #mobile-place-order
+    display: block
+
+  .login-before-checkout
+
+    &__wrapper h1
+      margin-bottom: 40px
+      margin-top: 40px
+
+    &__guest-title
+      margin-top: 30px
+
+    &__express
+      margin-bottom: 40px
+
+
+/* DESKTOP MULTISTEP */
+@media screen and (min-width: 992px)
+  .iwd-opc-main-wrapper.desktop-multistep
+    .anchors
+      margin-top: 47px
+      display: block
+
+      &__item
+        &:nth-child(2),
+        &:nth-child(3)
+          display: none
+
+    .iwd-opc-breadcrumbs
+      display: flex
+
+    .iwd-opc-main-top
+      &__title
+        display: block
+
+        &--mobile
+          display: none !important
+          text-align: center
+
+    .iwd-opc-payment-methods-form__edit-cart
+      display: none !important
+
+      &--multistep
+        display: flex !important
+
+    .iwd-opc-shipping-form.woocommerce-shipping-fields
+      margin-bottom: 0
+
+    .iwd-opc-payment-methods-form__edit-cart
+      margin-top: 24px
+
+    .iwd-opc-shipping-methods-form,
+    .iwd-opc-payment-methods-form
+      &__back
+        display: block
+
+    .iwd-opc-sidebar .iwd_opc_place_order
+      display: none
+
+    /* STEP 1*/
+    &.step-1
+      .iwd-opc-shipping-methods-form
+        display: none
+
+      .iwd-opc-payment-methods-form
+        display: none
+
+      .multistep-billing-btn
+        display: block
+
+      #ship-to-different-address
+        margin-bottom: 45px
+
+    /* STEP 2*/
+    &.step-2
+      .anchors
+        &__item
+          &:nth-child(2)
+            display: block
+
+      .iwd-opc-shipping-methods-form
+        display: block
+        margin-bottom: 0
+
+      .iwd-opc-billing-form
+        display: none
+
+      .iwd-opc-shipping-form
+        display: none
+
+      .iwd-opc-payment-methods-form
+        display: none
+
+      .multistep-delivery-btn
+        display: block
+
+    &.step-2,
+    &.step-3
+      .iwd-opc-smart-buttons
+        display: none
+
+
+    /* STEP 3*/
+    &.step-3
+      .anchors
+        &__item
+          &:nth-child(2)
+            display: block
+
+          &:nth-child(3)
+            display: block
+
+      .iwd-opc-shipping-methods-form
+        display: none
+
+      .iwd-opc-billing-form
+        display: none
+
+      .iwd-opc-shipping-form
+        display: none
+
+      .iwd-opc-payment-methods-form
+        display: block
+
+      .multistep-place-btn
+        display: block
+
+      .iwd-opc-sidebar .iwd_opc_place_order
+        display: block
+
+
+/* TABLET MULTISTEP */
+@media screen and (min-width: 768px) and (max-width: 991px)
+  .iwd-opc-main-wrapper.tablet-multistep
+    .anchors
+      margin-top: 47px
+      display: block
+
+      &__item
+        &:nth-child(2),
+        &:nth-child(3)
+          display: none
+
+    .iwd-opc-breadcrumbs
+      display: flex
+
+    .iwd-opc-main-top
+      &__title
+        display: block
+
+        &--mobile
+          display: none !important
+          text-align: center
+
+    .iwd-opc-smart-buttons
+      margin-top: 22px
+
+    .iwd-opc-shipping-form.woocommerce-shipping-fields
+      margin-bottom: 0
+
+    .iwd-opc-payment-methods-form__edit-cart
+      margin-top: 24px
+
+    .iwd-opc-shipping-methods-form,
+    .iwd-opc-payment-methods-form
+      &__back
+        display: block
+
+    #mobile-promo,
+    #mobile-place-order
+      display: none
+
+    #ship-to-different-address
+      margin-bottom: 9px
+
+    .iwd-opc-payment-methods-form__edit-cart
+      display: none !important
+
+      &--multistep
+        display: flex !important
+
+
+    /* STEP 1*/
+    &.step-1
+      .iwd-opc-shipping-methods-form
+        display: none
+
+      .iwd-opc-payment-methods-form
+        display: none
+
+      .multistep-billing-btn
+        display: block
+        margin-top: 0
+
+      #ship-to-different-address
+        margin-bottom: 45px
+
+
+    /* STEP 2*/
+    &.step-2
+      .anchors
+        &__item
+          &:nth-child(2)
+            display: block
+
+      .iwd-opc-shipping-methods-form
+        display: block
+        margin-bottom: 0
+
+      .iwd-opc-billing-form
+        display: none
+
+      .iwd-opc-shipping-form
+        display: none
+
+      .iwd-opc-payment-methods-form
+        display: none
+
+      .multistep-delivery-btn
+        display: block
+        margin-top: 36px
+
+
+    /* STEP 3*/
+    &.step-3
+      .anchors
+        &__item
+          &:nth-child(2)
+            display: block
+
+          &:nth-child(3)
+            display: block
+
+      #mobile-promo,
+      #mobile-place-order
+        display: block
+
+      .iwd-opc-shipping-methods-form
+        display: none
+
+      .iwd-opc-billing-form
+        display: none
+
+      .iwd-opc-shipping-form
+        display: none
+
+      .iwd-opc-payment-methods-form
+        display: block
+
+      .multistep-place-btn
+        display: none
+
+
+/* MOBILE MULTISTEP */
+@media screen and (max-width: 767px)
+  .iwd-opc-main-wrapper.mobile-multistep
+    .anchors
+      margin-top: 47px
+      display: block
+
+      &__item
+        &:nth-child(2),
+        &:nth-child(3)
+          display: none
+
+    .iwd-opc-breadcrumbs
+      display: flex
+
+    .iwd-opc-main-top
+      &__title
+        display: none
+
+        &--mobile
+          display: none !important
+
+    .iwd-opc-shipping-form.woocommerce-shipping-fields
+      margin-bottom: 0
+
+      p.form-row:last-of-type .iwd-opc-field
+        margin-bottom: 45px
+
+    .iwd-opc-payment-methods-form__edit-cart
+      margin-top: 24px
+
+    .iwd-opc-shipping-methods-form,
+    .iwd-opc-payment-methods-form
+      &__back
+        display: flex
+        justify-content: center
+
+    #mobile-promo,
+    #mobile-place-order
+      display: none
+
+    .iwd-opc-payment-methods-form__edit-cart
+      display: none !important
+
+      &--multistep
+        display: flex !important
+        justify-content: center
+
+    /* STEP 1*/
+    &.step-1
+      .iwd-opc-shipping-methods-form
+        display: none
+
+      .iwd-opc-payment-methods-form
+        display: none
+
+      .multistep-billing-btn
+        display: block
+        margin-top: 0
+
+      #ship-to-different-address
+        margin-bottom: 45px
+
+    /* STEP 2*/
+    &.step-2
+      .anchors
+        &__item
+          &:nth-child(2)
+            display: block
+
+      .iwd-opc-shipping-methods-form
+        display: block
+        margin-bottom: 0
+
+      .iwd-opc-billing-form
+        display: none
+
+      .iwd-opc-shipping-form
+        display: none
+
+      .iwd-opc-payment-methods-form
+        display: none
+
+      .multistep-delivery-btn
+        display: block
+        margin-top: 26px
+
+
+    /* STEP 3*/
+    &.step-3
+      .anchors
+        &__item
+          &:nth-child(2)
+            display: block
+
+          &:nth-child(3)
+            display: block
+
+      #mobile-promo,
+      #mobile-place-order
+        display: block
+
+      .iwd-opc-shipping-methods-form
+        display: none
+
+      .iwd-opc-billing-form
+        display: none
+
+      .iwd-opc-shipping-form
+        display: none
+
+      .iwd-opc-payment-methods-form
+        display: block
+
+      .multistep-place-btn
+        display: none
+
+
+@media (max-width: 66.4989378333em)
+  .woocommerce-checkout
+    #masthead
+      .col-full
+        padding-left: 12px
+        padding-right: 12px
+
+    .col-full
+      margin-left: auto
+      margin-right: auto
+      padding: 0
+
+
+
